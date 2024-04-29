@@ -1,0 +1,508 @@
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+span {
+    color: yellow;
+    font-family: "Madimi One", sans-serif;
+}
+
+section {
+    height: 100vh;
+}
+
+#about,
+#download {
+    background: linear-gradient(black, yellow);
+}
+
+/*   NAVIGATION BAR   */
+
+nav {
+    position: fixed;
+    z-index: 999;
+    width: 100vw;
+    height: 13vh;
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Madimi One", sans-serif;
+    border-radius: 0 0 15px 15px;
+}
+
+.logo {
+    display: flex;
+    gap: 1vw;
+    color: white;
+    align-items: center;
+    font-size: 25px;
+}
+
+.logo img {
+    width: 8.5vh;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.links {
+    display: flex;
+    width: 40vw;
+    justify-content: space-around;
+    font-size: 25px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+/*   HOME PAGE   */
+
+#home {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(yellow, black);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.home-content h1 {
+    font-weight: bolder;
+    color: white;
+    font-size: 50px;
+    background-color: black;
+    padding: 25px;
+    border-radius: 15px;
+    width: 35vw;
+    margin-left: -20%;
+    padding-left: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg img {
+    height: 60vh;
+    aspect-ratio: 1/1;
+}
+
+.bg {
+    display: flex;
+    z-index: 1;
+    height: 65vh;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+#home a {
+    position: absolute;
+    padding: 30px;
+    background-color: black;
+    color: white;
+    bottom: 10%;
+    right: 10%;
+    font-size: 30px;
+    font-weight: bolder;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#home a:hover {
+    color: yellow;
+}
+
+/*   ABOUT PAGE   */
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    height: 50vh;
+    width: 100vw;
+}
+
+.card {
+    height: 100%;
+    width: 20%;
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    font-family: "Madimi One", sans-serif;
+}
+
+.card .head {
+    color: yellow;
+    font-size: 30px;
+}
+
+.card .c {
+    color: white;
+    font-size: 25px;
+    padding: 0 5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+/*   SERVICES PAGE   */
+
+#services {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
+
+.s1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.s1 p {
+    width: 90vw;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 35px;
+    margin-top: 50px;
+}
+
+ul li {
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 35px;
+}
+
+.s1 h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-family: "Madimi One", sans-serif;
+    font-weight: bolder;
+    color: yellow;
+    font-size: 60px;
+    margin-top: 50px;
+}
+
+.s2 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/*   DOWNLOAD PAGE   */
+
+#download {
+    width: 100vw;
+    height: 100vh;
+}
+
+.d1 {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d1 .logo {
+    width: 50vw;
+    height: 40vh;
+    display: flex;
+    margin-top: 150px;
+    margin-left: 100px;
+}
+
+#download .dimg {
+    width: 15vw;
+}
+
+#download h2 {
+    font-size: 130px;
+    font-family: "Madimi One", sans-serif;
+}
+.d2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+.store {
+    display: flex;
+    gap: 70px;
+}
+
+.store img {
+    margin-bottom: 70px;
+    height: 75px;
+    width: 250px;
+}
+
+.store img:hover {
+    cursor: pointer;
+    scale: 1.2;
+}
+
+/*   CONTACT PAGE   */
+
+#contact {
+    background-color: black;
+    height: 75vh;
+}
+
+.footer1 {
+    display: flex;
+    justify-content: space-between;
+    height: 20vh;
+    align-items: center;
+    font-family: "Madimi One", sans-serif;
+}
+
+.footer1 .logo {
+    margin-left: 190px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    margin-right: 15vw;
+}
+
+.icons div {
+    display: flex;
+    width: 4vw;
+    justify-content: space-around;
+}
+
+.icons .i {
+    width: 4vh;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+}
+
+.footer2 {
+    display: flex;
+    width: 100%;
+    height: 40vh;
+    justify-content: space-evenly;
+}
+
+.column .f {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.f a {
+    color: white;
+    text-decoration: none;
+}
+
+.f a:hover {
+    cursor: pointer;
+    color: yellow;
+    text-decoration: underline;
+}
+
+.footer3 {
+    height: 15vh;
+    align-items: center;
+}
+
+.msg {
+    width: 6vh;
+    aspect-ratio: 1/1;
+}
+
+.f2 {
+    display: flex;
+    gap: 20px;
+    width: 10vh;
+    align-items: center;
+    margin-left: 15vw;
+}
+
+textarea {
+    margin-top: 10px;
+    width: 20vw;
+    padding-top: 20px;
+    padding-left: 30px;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: "Madimi One", sans-serif;
+    border: 5px solid yellow;
+    border-radius: 15px;
+    background: transparent;
+    cursor: pointer;
+    color: yellow;
+}
+
+textarea:hover {
+    border-color: white;
+}
+
+textarea::placeholder {
+    color: yellow;
+}
+
+.msg:hover {
+    cursor: pointer;
+}
+
+/*   MEDIA QUERIES   */
+
+@media (max-width: 500px) {
+    /*   NAVIGATION BAR   */
+
+    nav {
+        width: 500px;
+        height: max-content;
+        flex-direction: column;
+    }
+    .links {
+        flex-direction: row;
+        margin-right: 50px;
+        height: 60%;
+        text-align: center;
+        gap: 12px;
+        font-size: 18px;
+    }
+
+    /*   HOME PAGE   */
+
+    .content {
+        margin-top: 5%;
+        flex-direction: column;
+        height: 100vh;
+        gap: 20px;
+    }
+    .bg {
+        height: 20vh;
+        aspect-ratio: 1/1;
+    }
+    .bg img {
+        height: 80%;
+        aspect-ratio: 1/1;
+    }
+    .bg .home-content {
+        flex-direction: column;
+        height: 10px;
+    }
+    .home-content h1 {
+        font-size: 20px;
+    }
+    .home-content {
+        width: 150px;
+    }
+    #home a {
+        font-size: 10px;
+    }
+
+    /*   ABOUT PAGE   */
+
+    #about .cards {
+        margin-top: 20px;
+        height: 80vh;
+        flex-direction: column;
+        align-items: center;
+    }
+    #about .card {
+        height: 100px;
+        width: 400px;
+    }
+    #about .head {
+        font-size: 20px;
+    }
+    #about .c {
+        font-size: 12px;
+    }
+
+    /*   SERVICES PAGE   */
+
+    #services .s1 {
+        font-size: 20px;
+        padding-top: 100px;
+        color: black;
+    }
+    .s1 h1 {
+        color: yellow;
+        font-size: 40px;
+        margin-top: -40px;
+    }
+    .s1 p {
+        font-size: 20px;
+    }
+    .s2 li {
+        font-size: 20px;
+    }
+
+    /*   DOWNLOAD PAGE   */
+
+    #download h2 {
+        font-size: 50px;
+    }
+    #download .logo {
+        margin-right: 75px;
+    }
+    .d2 {
+        align-items: center;
+    }
+
+    .d2 img {
+        width: 150px;
+        height: 50px;
+    }
+
+    /*   CONTACT PAGE   */
+
+    #contact {
+        height: 100vh;
+    }
+    .footer1 .logo {
+        margin-left: 30px;
+    }
+    #contact .icons {
+        width: 35vw;
+        justify-content: space-evenly;
+    }
+    .footer2 a {
+        padding: 10px;
+        font-size: 15px;
+    }
+    .footer3 {
+        margin-top: 120px;
+    }
+    .footer3 textarea {
+        width: 50vw;
+        font-size: 15px;
+    }
+}
